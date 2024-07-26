@@ -18,11 +18,15 @@ public class Admin extends User{
 
     @Override
     public void ListUser() {
-        super.ListUser();
+    super.ListUser();
+        System.out.println("Ingresa la clave del administrador");
+        Superkey=sc.nextInt();
     }
 
     @Override
     public void CreateUser() {
         super.CreateUser();
+        System.out.println("Crear clave del andministrador");
+        Superkey=sc.nextInt();
     }
 }

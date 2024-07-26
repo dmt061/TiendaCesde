@@ -6,7 +6,9 @@ public class Purchases {
 
     Product Products;
 
-    Employee employee;
+    Ventor ventor;
+
+
 
     float total;
 
