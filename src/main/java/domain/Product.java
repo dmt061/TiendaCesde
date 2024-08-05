@@ -8,7 +8,7 @@ public class Product {
     private int productId;
     private String productName;
     private String description;
-    private Category category;
+     Category category;
     private float cost;
     private float profit;
     private float price = cost/(1 - (profit/100));
@@ -109,7 +109,33 @@ public class Product {
 
         System.out.println("Ingrese el id del producto");
         productId = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Ingrese el nombre del prodcuto");
+        productName=sc.nextLine();
+        System.out.println("Ingrese la descripcion del producto");
+        description=sc.nextLine();
+        System.out.println("Seleccione una categoria");
+        category.getCategoryName();
+        System.out.println("Ingrese el costo del producto");
+        cost=sc.nextFloat();
+        System.out.println("Ingrese el margen de ganancia ");
+        profit=sc.nextFloat();
+        sc.nextLine();
+        System.out.println("Seleccione un estado");
+        state=sc.nextLine();
 
+
+    }
+
+    public  void printProduct(){
+        System.out.println("Id "+ productId + "\n"+
+        "Nombre del producto" + productName + "\n"+
+        "descripcion"+ description + "\n"+
+        "categoria"+ category.getCategoryName() + "\n"+
+        "Costo" + cost + "\n"+
+        "ganancia"+ profit + "\n"+
+        "precio"+ price+ "\n"+
+        "Estado"+ state + "\n");
 
     }
 
